@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.testapp.testapp.prob3activity">
+
+    <TextView
+        android:text="@string/prob3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ToggleButton
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:textOn="Red"
+        android:textOff="Not Red"
+        android:id="@+id/toggle_red"
+        android:onClick="togglebtns"/>
+
+    <ToggleButton
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/toggle_red"
+        android:layout_marginLeft="10dp"
+        android:textOn="Yellow"
+        android:textOff="Not Yellow"
+        android:id="@+id/toggle_yellow"
+        android:onClick="togglebtns"/>
+
+    <ToggleButton
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/toggle_yellow"
+        android:layout_marginLeft="10dp"
+        android:textOn="Blue"
+        android:textOff="Not Blue"
+        android:id="@+id/toggle_blue"
+        android:onClick="togglebtns"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/toggle_yellow"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/toggle_text"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/toggle_next"
+        android:text="@string/next"
+        android:onClick="nextprob3"/>
+
+</RelativeLayout>
